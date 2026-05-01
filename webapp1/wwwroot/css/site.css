@@ -1,0 +1,103 @@
+
+@keyframes wavyani {
+    0% {
+       top:0px
+    }
+
+    25% {
+        top: -5px
+    }
+    50% {
+        top: 5px
+    }
+    75% {
+        top: 0px
+    }
+    100% {
+        top: 0px
+    }
+}
+
+html {
+    background-color: black;
+    color: ghostwhite;
+    font-size: 14px;
+}
+header {
+    background-color: black;
+    color: ghostwhite;
+}
+
+footer {
+    background-color: black;
+    color: ghostwhite;
+}
+@media (min-width: 768px) {
+  html {
+    background-color: black;
+    color: ghostwhite;
+    font-size: 16px;
+  }
+}
+
+p {
+    
+    color: ghostwhite;
+    position: relative;
+}
+
+html {
+    background-color: black;
+    color: ghostwhite;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: black;
+    color: ghostwhite;
+    margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+    background-color: black;
+    color: ghostwhite;
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+    background-color: black;
+    color: ghostwhite;
+    text-align: start;
+}
+
+wavy {
+    position:relative;
+    display: inline;
+    animation-name: wavyani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+but {
+    color: black;
+    background-color: ghostwhite;
+    border: solid;
+    border-color: ghostwhite;
+    border-radius: 25px;
+    padding: 10px;
+
+}
+h1 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+h4 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+img
+{
+margin-top:50px;
+margin-left:100px;
+margin-right:100px;
+}
