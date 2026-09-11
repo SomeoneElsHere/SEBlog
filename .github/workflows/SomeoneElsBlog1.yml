@@ -46,11 +46,13 @@ jobs:
         name: webapp
         path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
     - name: Azure Login
-      uses: azure/login@v2
+      uses: azure/login@v3
       with:
         client-id: ${{ vars.SomeoneElsBlog_CLIENT_ID_0E87 }}
         tenant-id: ${{ vars.SomeoneElsBlog_TENANT_ID_0E87 }}
         subscription-id: ${{ vars.SomeoneElsBlog_SUBSCRIPTION_ID_0E87 }}
+        enable-AzPSSession: true
+        max-context-population: -1
     - name: Deploy to Azure WebApp
       uses: azure/webapps-deploy@v2
       with:
